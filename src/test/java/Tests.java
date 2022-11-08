@@ -37,7 +37,7 @@ public class Tests extends Variables {
     @Description("Verify Search")
     public void test03_Search() {
         Verifications.verifyTrue(SearchWorkFlow.searchItem());
-        Verifications.verifyString(SearchWorkFlow.resultsContainSearchTerm(),searchWord);
+        Verifications.verifyTrue(SearchWorkFlow.resultsContainSearchTerm());
         Verifications.verifyTrue(SearchWorkFlow.priceRange());
         Verifications.verifyTrue(SearchWorkFlow.shortByHighToLow());
         Verifications.verifyTrue(SearchWorkFlow.colorChoice());
